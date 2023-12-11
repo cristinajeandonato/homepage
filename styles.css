@@ -10,11 +10,11 @@
     line-height: 1.5;
   
     --primary-text-color: #181820;
-    --secondary-text-color: #5c5c62;
-    --durability-text-color: #6a737d9c;
+    --secondary-text-color: #303033;
+    --durability-text-color: #464c539c;
     --icon-color: #6a737d;
-    --border-color: #ff9a0045;
-    --text-decoration-color: #ff9a00;
+    --border-color: #298dac45;
+    --text-decoration-color: #27b9c4;
   }
   
   .container {
@@ -68,10 +68,14 @@
     }
   }
 
-  /*** CONTACT INFO STYLES ***/
-  .contact-info__header,
-.contact-info__sub-header {
-  text-align: center;
+/*** CONTACT INFO STYLES ***/
+.resume-header__block {
+  margin-bottom: 1.5rem;
+}
+.resume-header__block > * {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 1.5rem;
 }
 
 .contact-info__header {
@@ -125,11 +129,11 @@
 
 .contact-info__avatar {
   border-radius: 50%;
-  width: 100px;
-  height: 100px;
+  width: 140px;
+  height: 140px;
   object-fit: cover;
-  border: 3px solid;
-  border-color: var(--text-decoration-color);
+  margin-right: 2rem;
+  box-shadow: 3px 3px 3px #000000;
 }
 
 /*** INTRO AND SKILLS STYLES ***/
@@ -160,9 +164,10 @@
   }
   
   .skills__header {
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
     text-align: center;
     margin-bottom: 15px;
+    font-size: 1.5rem;
   }
   
   .skills__text {
@@ -177,15 +182,15 @@
   }
   
   .experiences__header {
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
     text-align: left;
     margin-bottom: 20px;
+    font-size: 1.5rem;
   }
   
   .experiences__company-header-durability {
     color: var(--durability-text-color);
     text-align: left;
-    margin-bottom: 10px;
     font-size: 15px;
   }
   
@@ -194,12 +199,11 @@
     text-decoration-color: var(--text-decoration-color);
     text-decoration-line: underline;
     text-align: left;
-    margin-bottom: 20px;
   }
   
   .experiences__company-project {
     margin-left: 15px;
-    margin-bottom: 25px;
+    margin-bottom: 1rem;
   }
   
   .experiences__company-project-role {
@@ -229,25 +233,37 @@
   }
   
   .additional-info__education-header {
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
     text-align: left;
-    margin-bottom: 20px;
+    font-size: 1.5rem;
   }
   
   .additional-info__education-university-durability {
     color: var(--durability-text-color);
     text-align: left;
-    margin-bottom: 10px;
     font-size: 15px;
   }
   
   .additional-info__education-university-speciality {
     color: var(--primary-text-color);
     text-align: left;
-    margin-bottom: 10px;
   }
   
   .additional-info__education-university-name {
+    color: var(--secondary-text-color);
+  }
+  
+  .additional-info__hobbies {
+    margin-bottom: 20px;
+  }
+  
+  .additional-info__hobbies-header {
+    color: var(--primary-text-color);
+    text-align: left;
+    font-size: 1.5rem;
+  }
+  
+  .additional-info__hobbies-item {
     color: var(--secondary-text-color);
   }
   
@@ -256,9 +272,9 @@
   }
   
   .additional-info__languages-header {
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
     text-align: left;
-    margin-bottom: 20px;
+    font-size: 1.5rem;
   }
   
   .additional-info__languages-item {
